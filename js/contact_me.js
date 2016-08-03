@@ -24,7 +24,7 @@ $(function() {
             }
             $.ajax({
                 url: "../bin/contact_me.php",
-                type: "POST",
+                type: "GET",
                 data: {
                     name: name,
                     phone: phone,
