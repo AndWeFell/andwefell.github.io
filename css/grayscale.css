@@ -124,7 +124,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -236,6 +236,9 @@ a:focus {
   height: 200px;
   margin-top: 100px;
 }
+#story, #filmmakers, #donate, #afi {
+  padding-top: 150px
+}
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px;
@@ -311,4 +314,20 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.descriptions{
+  padding-bottom: 30px;
+}
+
+.portfolio {
+    padding: 65px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 70px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
 }

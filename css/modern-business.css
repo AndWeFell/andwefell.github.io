@@ -1,0 +1,677 @@
+/*!
+* Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+
+/* Global Styles */
+
+html{
+	position: relative;
+	min-height: 100%;
+	overflow-x:hidden;
+    width:100%;
+   /* You may also want to try adding:*/
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+	background-color: white;
+	color: black;
+	margin: 0 0 60px;
+	font-family: MuseoSlab;
+	font-size: 16px;
+	overflow-x:hidden;
+    width:100%;
+   /* You may also want to try adding:*/
+    /*margin: 0;*/
+    padding: 0;
+	/*padding-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.boxfilm{
+    /*background: rgba(84,134,161, .5);*/
+    /*border: 2px solid;*/
+}
+
+.progress-bar-vertical {
+	border: solid 2px;
+	width: 100px;
+	min-height: 250px;
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	align-items: flex-end;
+	-webkit-align-items: flex-end; /* Safari 7.0+ */
+}
+
+.progress-bar-vertical .progress-bar {
+	width: 100%;
+	height: 0;
+	-webkit-transition: height 0.6s ease;
+	-o-transition: height 0.6s ease;
+	transition: height 0.6s ease;
+}
+
+.progress-bar-striped, .progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.progress-bar{
+	background-color: #93060F;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	color: #5486a1;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #5486a1;
+	background-color: transparent;
+}
+
+
+.navbar{
+	background-color: black;
+	font-family: BebasNeue;
+	font-size: 22px;
+}
+
+.navbar-brand>img{
+	display: inline-block;
+}
+
+.navbar-brand{
+	font-size: 28px;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+
+
+#home{
+	background: url(../img/bg.jpg) no-repeat bottom center scroll;
+	background-color: black;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+@font-face { font-family: BebasNeue; src: url('../BebasNeue.otf'); }
+@font-face { font-family: MuseoSlab; src: url('../MuseoSlab.otf'); }
+.content-section {
+	padding-top: 10px;
+}
+
+.title{
+	font-family: BebasNeue;
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.imagetitle{
+	font-size: 100px;
+	text-shadow: 2px 3px 8px #000
+}
+
+#andwefell{
+	font-family: BebasNeue;
+	font-size: 20px;
+}
+
+ol li{
+	text-align: left;
+}
+
+ul li{
+	text-align: left;
+	list-style-type: none;
+}
+
+.bioheader{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 32px;
+	font-family: BebasNeue;
+	color: #5486a1;
+	font-weight: bold;
+}
+.quote{
+	padding-top: 30px;
+	font-size: 26px;
+	font-style: italic;
+	color: #5486a1;
+}
+
+.quotesignature{
+	font-size: 20px;
+	/*color: #5486a1;*/
+}
+
+.biography{
+	font-size: 16px;
+}
+
+.carousel-caption{
+	font-family: BebasNeue;
+	font-size: 100px;
+	top: 60%;
+	transform: translateY(-50%);
+	bottom: initial;
+}
+
+/*.banner-wrapper{
+position: relative;
+overflow: hidden;
+padding-top: 300px;
+padding-bottom: 300px;
+width: 100%;
+}
+
+.img-banner{
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+}*/
+
+.portfolio {
+	padding: 65px 0;
+}
+
+.portfolio-item {
+	margin-bottom: 15px;
+}
+
+.img-portfolio {
+	margin: 0 auto;
+}
+
+.descriptions{
+	padding-bottom: 30px;
+}
+
+.img-hover:hover {
+	opacity: 0.8;
+}
+
+#director{
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	font-size: 45px;
+	font-family: BebasNeue;
+}
+
+#directortwo{
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 15px;
+	font-size: 45px;
+	font-family: BebasNeue;
+}
+
+.storyheadline{
+	padding-top: 30px;
+	padding-bottom: 15px;
+	text-align: left;
+	font-size: 45px;
+	font-family: BebasNeue
+}
+
+#amountraised{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.storydesc{
+	font-size: 16px;
+	text-align: left;
+}
+
+.donatebutton{
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#donate{
+	text-align: center;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #0275d8;
+	border-color: #0275d8;
+}
+
+.btn-primary-outline, .btn-info-outline{
+	padding: 15px 30px;
+	font-size: 25px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+}
+
+
+.btn-primary-outline:hover {
+	color: #fff;
+	background-color: #0275d8;
+	border-color: #0275d8;
+}
+.btn:focus, .btn:hover {
+	text-decoration: none;
+}
+.btn-primary-outline {
+	color: #0275d8;
+	background-color: transparent;
+	background-image: none;
+	border-color: #0275d8;
+}
+
+.btn-info-outline:hover {
+	color: #fff;
+	background-color: #5486a1;
+	border-color: #5486a1;
+}
+.btn:focus, .btn:hover {
+	text-decoration: none;
+}
+.btn-info-outline {
+	color: #5486a1;
+	background-color: transparent;
+	background-image: none;
+	border-color: #5486a1;
+}
+
+#whydonate{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.donationrow{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.grantsheadline{
+	padding-bottom: 10px;
+}
+
+.inkindlist{
+	list-style-type: square;
+}
+
+.inkindlistitem{
+	margin-bottom: 18px;
+}
+
+.intro {
+	display: table;
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	text-align: center;
+	color: white;
+
+}
+.intro .intro-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+	font-family: BebasNeue;
+	text-shadow: 2px 3px 8px #000;
+	padding-top: 200px;
+	font-size: 150px;
+}
+.intro .intro-body .intro-text {
+	font-family: BebasNeue;
+	font-size: 45px;
+}
+
+#stephcontact, #sendmessage{
+	color: #5486a1;
+	padding-bottom: 20px;
+}
+
+.hideme, .hidemebeginning
+{
+	opacity:0;
+}
+
+
+.aboutafititle{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: #5486a1;
+	text-align: center;
+	font-family: BebasNeue;
+	font-size: 45px;
+}
+
+.btn-circle {
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	padding: 7px 16px;
+	border: 2px solid white;
+	border-radius: 100% !important;
+	font-size: 40px;
+	color: white;
+	background: transparent;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+	outline: none;
+	color: white;
+	background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+	0 {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@-moz-keyframes pulse {
+	0 {
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+	50% {
+		-moz-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	100% {
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+	height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+	height: 100%;
+}
+
+header.carousel .fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	padding-top: 80px;
+}
+
+.img-bio{
+	padding-top: 0px;
+}
+#donationimage{
+	padding-top: 10px;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+	font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+	display: block;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.price sup {
+	top: -20px;
+	left: 2px;
+	font-size: 20px;
+}
+
+.period {
+	display: block;
+	font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+	text-align:left;
+	padding-top: 50px;
+	/* just for demo */ 
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+}
+
+.footertext{
+	color: gray;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#homefooter{
+	color:white;
+}
+
+#story
+{padding-bottom: 10px}
+
+#homebuttonstop{
+	padding-top: 135px;
+}
+
+#percentnumber{
+	padding-top: 10px
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+	.customer-img,
+	.img-related {
+		margin-bottom: 30px;
+	}
+
+	#filmmakerstitle{
+		font-size: 80px;
+	}
+	.imagetitle{
+		font-size: 40px;
+	}
+	.homebuttons{
+		margin-top: 30px;
+	}
+	#homebuttonstop{
+		padding-top: 40px;
+	}
+	.btn-info-outline{
+		padding: 10px 20px;
+		font-size: 18px;
+		line-height: 1.3333333;
+		border-radius: 6px;
+	}
+}
+
+@media(max-width: 1299px){
+	#drewbio, #carolbio, #xibio{
+		padding-top: 30px;
+	}
+}
+
+@media(max-width: 1199px){
+	#whydonate{
+		padding-top: 30px;
+	}
+	#amountraised{
+		padding-top: 15px;
+	}
+}
+
+@media(max-width:767px) {
+	.progress-bar-vertical{
+		max-height: 100px;
+		min-height: 100px;
+		width: 80px;
+	}
+	.form-control{
+		max-width: 300px;
+	}
+	.contact-section{
+		margin-left: 30px;
+		/*padding-right: -100px;*/
+	}
+	#percentnumber{
+		padding-top: 0px;
+	}
+	.donatebutton{
+		padding-top: 10px;
+	}
+	.donationrow{
+
+     padding-top: 0px; 
+     padding-bottom: 0px; 
+	}
+	#navbarsmallhome {
+	    margin-right: 25px;
+	    margin-left: -15px;
+	}
+	.quote{
+		font-size: 18px;
+	}
+	.quotesignature{
+		font-size: 16px;
+	}
+	.aboutafititle{
+		font-size: 34px;
+		padding-top: 20px;
+    	padding-bottom: 0px;
+	}
+	.storyheadline{
+		padding-top: 20px;
+	}
+	.bioheader{
+		font-size: 26px;
+	}
+	#photonavbar{
+		max-height: 50px;
+		padding-top: 10px;
+	}
+	.img-portfolio {
+		margin-bottom: 15px;
+	}
+	.img-responsive{
+		padding: 0px
+	}
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+		padding-top: 50px;
+	}
+	.intro .intro-body .brand-heading {
+		font-family: BebasNeue;
+		text-shadow: 2px 3px 8px #000;
+		font-size: 60px;
+		padding-top: 50px;
+	}
+	.intro .intro-body .intro-text {
+		font-family: BebasNeue;
+		font-size: 26px;
+	}
+
+	header.carousel .carousel {
+		height: 70%;
+	}
+	#filmmakerstitle{
+		font-size: 40px;
+	}
+	#director{
+		font-size: 40px;
+		font-family: BebasNeue;
+		padding-top: 10px;
+	}
+	.bioheader{
+		padding-bottom: 0px;
+	}
+	#stephbio, #patrickbio, #nickbio{
+		padding-top: 30px;
+	}
+	.img-bio{
+		padding-top: 10px;
+	}
+	#filmmakersimagetitle{
+		padding-top: 15px;
+	}
+	#contactmenubar{
+		margin-right: 15px;
+	}
+
+}
+@media (min-width: 768px) {
+	#drewheader{
+		padding-top: 40px;
+	}
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
+	.navbar {
+		min-height: 80px;
+	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+		margin-top: 20px;
+	}
+}
+
