@@ -345,7 +345,6 @@ width: 100%;
 
 #stephcontact, #sendmessage{
 	color: #5486a1;
-	padding-bottom: 20px;
 }
 
 .hideme, .hidemebeginning
@@ -660,6 +659,9 @@ footer {
 
 }
 @media (min-width: 768px) {
+	.list-social-icons{
+		padding-bottom: 75px;
+	}
 	#drewheader{
 		padding-top: 40px;
 	}
