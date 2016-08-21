@@ -150,15 +150,19 @@ ul li{
 	font-weight: bold;
 }
 .quote{
-	padding-top: 30px;
-	font-size: 26px;
+	padding-top: 120px;
+	font-size: 28px;
 	font-style: italic;
 	color: #5486a1;
 }
 
 .quotesignature{
-	font-size: 20px;
-	/*color: #5486a1;*/
+	padding-top: 10px;
+	font-size: 24px;
+}
+
+#bottom-quotes{
+	font-size: 18px;
 }
 
 .biography{
@@ -227,7 +231,7 @@ width: 100%;
 }
 
 .storyheadline{
-	padding-top: 30px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: left;
 	font-size: 45px;
@@ -300,7 +304,7 @@ width: 100%;
 #whydonate{
 	font-size: 20px;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .donationrow{
@@ -460,6 +464,27 @@ header.carousel .fill {
 	padding-top: 80px;
 }
 
+#img-couple{
+	padding-top: 20px;
+	padding-bottom: 0px;
+	max-height: 400px;
+	display: inline;
+}
+
+
+#img-house{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	max-height: 450px;
+	display: inline;
+}
+
+#img-car{
+	padding-top: 0px;
+	padding-bottom: 40px;
+	max-height: 300px;
+}
+
 .img-bio{
 	padding-top: 0px;
 }
@@ -599,6 +624,7 @@ footer {
 	    margin-left: -15px;
 	}
 	.quote{
+		padding-top: 20px;
 		font-size: 18px;
 	}
 	.quotesignature{
