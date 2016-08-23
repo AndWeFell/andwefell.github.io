@@ -35,6 +35,8 @@ body {
     /*border: 2px solid;*/
 }
 
+
+
 .progress-bar-vertical {
 	border: solid 2px;
 	width: 100px;
@@ -464,6 +466,11 @@ header.carousel .fill {
 	padding-top: 80px;
 }
 
+#progress-bar-img{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 #img-couple{
 	padding-top: 20px;
 	padding-bottom: 0px;
@@ -560,6 +567,10 @@ footer {
 		margin-bottom: 30px;
 	}
 
+	#contact_info{
+		text-align: center
+	}
+
 	#filmmakerstitle{
 		font-size: 80px;
 	}
@@ -592,6 +603,12 @@ footer {
 	}
 	#amountraised{
 		padding-top: 15px;
+	}
+	#progress-bar-img, #img-couple, #img-house, #img-car{
+		max-height: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -693,6 +710,16 @@ footer {
 	}
 
 }
+@media(max-width:415px) {
+	#progress-bar-img, #img-couple, #img-house, #img-car{
+		max-height: 200px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+
+	}
 @media (min-width: 768px) {
 	.list-social-icons{
 		padding-bottom: 75px;
@@ -710,5 +737,6 @@ footer {
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
 		margin-top: 20px;
 	}
+
 }
 
