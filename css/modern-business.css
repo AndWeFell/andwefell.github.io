@@ -30,6 +30,12 @@ body {
 	/*padding-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+#testbody{
+	margin: 0 auto; 
+	padding: 0px; 
+}
+
+
 .boxfilm{
     /*background: rgba(84,134,161, .5);*/
     /*border: 2px solid;*/
@@ -47,6 +53,11 @@ body {
 
 #tickmarks{
 	margin-top: 0px;
+}
+
+#contact_info{
+	padding-top: 50px;
+	text-align: center
 }
 
 
@@ -95,6 +106,19 @@ body {
 	background-color: transparent;
 }
 
+#trailerheading{
+	padding-top: 40px;
+	color: black;
+	text-align: center;
+	font-style: italic;
+	font-family: BebasNeue;
+	font-size: 95px;
+}
+
+#trailerheadingspan{
+	font-family: Montserrat, sans-serif; 
+	font-size: 60px
+}
 
 .navbar{
 	background-color: black;
@@ -107,13 +131,13 @@ body {
 }
 
 .navbar-brand{
-	font-size: 28px;
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .navbar-inverse .navbar-brand{
 	color: white;
 }
-
 
 #total{
 	text-align: left;
@@ -138,12 +162,20 @@ body {
 
 
 #home{
-	background: url(../img/bg.jpg) no-repeat bottom center scroll;
-	background-color: black;
+/*	background: url(../img/busphoto.png) no-repeat bottom center scroll;
+	background-color: #110908;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	background-position: 0 30px;*/
+	background-image:url('../img/busphoto.png');
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center 15px;
 }
 @font-face { font-family: BebasNeue; src: url('../BebasNeue.otf'); }
 @font-face { font-family: MuseoSlab; src: url('../MuseoSlab.otf'); }
@@ -370,19 +402,26 @@ width: 100%;
 	color: white;
 
 }
+#presents{
+	/*font-size: 28px;*/
+}
 .intro .intro-body {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: left;
+	padding-left: 40px;
 }
 .intro .intro-body .brand-heading {
 	font-family: BebasNeue;
 	text-shadow: 2px 3px 8px #000;
-	padding-top: 200px;
-	font-size: 150px;
+	/*padding-top: 150px;*/
+	font-size: 250px;
 }
 .intro .intro-body .intro-text {
-	font-family: BebasNeue;
-	font-size: 45px;
+	text-shadow: 2px 3px 8px #000;
+	font-style: Italic;
+	font-family: Arial;
+	font-size: 30px;
 }
 
 #stephcontact, #sendmessage{
@@ -410,7 +449,7 @@ width: 100%;
 	color: #5486a1;
 	text-align: center;
 	font-family: BebasNeue;
-	font-size: 45px;
+	font-size: 70px;
 }
 
 .btn-circle {
@@ -499,7 +538,7 @@ header.carousel .fill {
 }
 
 #photonavbar{
-	margin-right: -15px;
+	margin-right: -5px;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
@@ -525,11 +564,23 @@ header.carousel .fill {
 	display: inline;
 }
 
+#poster{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 120px;
+	max-width: 500px;
+}
+
 #img-lockerroom{
 	padding-top: 0px;
-	max-height: 500px;
+	max-height: 600px;
 	float: right;
 	margin-right: -50px;
+}
+
+.imagetitle{
+	font-size: 150px;
 }
 
 .img-bio{
@@ -607,6 +658,9 @@ footer {
 /* Responsive Styles */
 
 @media(max-width:991px) {
+	#contact_info{
+		padding-top: 20px;
+	}
 	.customer-img,
 	.img-related {
 		margin-bottom: 30px;
@@ -633,7 +687,7 @@ footer {
 	}
 
 	#img-lockerroom{
-		margin-right: 30px;
+		margin-right: 15px;
 	}
 
 
@@ -683,13 +737,31 @@ footer {
 }
 
 @media(max-width:767px) {
+	#trailerheading{
+		font-size: 50px;
+		padding-top: 20px;
+	}
+
+	#trailerheadingspan{
+		font-size: 40px
+
+	}
+	#poster{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding-top: 0px;
+		max-width: 350px;
+	}
 	.progress-bar-vertical{
 		max-height: 100px;
 		min-height: 100px;
 		width: 80px;
 	}
 	#photonavbar{
-		margin-right: -30px;
+		max-width: 30px !important;
+	    margin-top: -10px !important;
+	    margin-right: -10px;
 	}
 	.form-control{
 		max-width: 300px;
@@ -731,10 +803,6 @@ footer {
 	.bioheader{
 		font-size: 26px;
 	}
-	#photonavbar{
-		max-height: 50px;
-		padding-top: 10px;
-	}
 	.img-portfolio {
 		margin-bottom: 15px;
 	}
@@ -747,12 +815,13 @@ footer {
 	.intro .intro-body .brand-heading {
 		font-family: BebasNeue;
 		text-shadow: 2px 3px 8px #000;
-		font-size: 60px;
+		font-size: 100px;
 		padding-top: 50px;
 	}
 	.intro .intro-body .intro-text {
-		font-family: BebasNeue;
+		font-family: MuseoSlab;
 		font-size: 26px;
+		font-weight: Italic
 	}
 
 	header.carousel .carousel {

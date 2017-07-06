@@ -20,6 +20,11 @@ body {
 	/*padding-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.homenavbar{
+	background-color: #6C3C3C !important;
+}
+
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 	color: #5486a1;
 }
@@ -48,9 +53,17 @@ body {
 	color: white;
 }
 
+#poster{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 120px;
+	max-width: 500px;
+}
+
 
 #home{
-	background: url(../img/bg.jpg) no-repeat bottom center scroll;
+	/*background: url(../img/bg.jpg) no-repeat bottom center scroll;*/
 	background-color: black;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -108,6 +121,10 @@ ul li{
 .quotesignature{
 	font-size: 20px;
 	/*color: #5486a1;*/
+}
+
+#photonavbar{
+	margin-right: -5px;
 }
 
 .biography{
@@ -487,6 +504,13 @@ footer {
 }
 
 @media(max-width:767px) {
+	#poster{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding-top: 0px;
+		max-width: 350px;
+	}
 	.img-portfolio {
 		margin-bottom: 15px;
 	}
